@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.header h1{
+    color: aliceblue;
+    margin-top: 50px;
+    margin-left: 500px;
+    font-size: 40px;
+    font-weight: 700;
+
+}
+.header{
+    background-color:grey;
+    height: 40px;
+    padding-top: 15px;
+    text-align: end;
+}
+
+.navbar a{
+    padding-left: 25px;
+    padding-right:20px ;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight:600 ;
+    background-color:cyan;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.navbar a:hover{
+    cursor: pointer;
+    background-color: gold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.navbar {
+    animation-name: moveright;
+    animation-duration: 2s;
+
+}
+.home{
+    animation-name: movebottom;
+    animation-duration: 2s;
+
+}
+.homecontent {
+    background: linear-gradient(red,cyan);
+    -webkit-background-clip:text ;
+    -webkit-text-fill-color:transparent;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.picture img{
+    padding-top: 10px;
+    height: 200px;
+    width:400px;
+    border-radius: 20px;
+    margin-left: 500px;
+}
+.content h1{
+    padding-top: 40px;
+    font-size: 30px;
+    font-weight:700 ;
+    word-spacing: 2px;
+    background-color: lightgreen;
+    -webkit-background-clip:text ;
+    -webkit-text-fill-color:transparent;
+    margin-left: 360px ;
+
+    
+}
+.content p{
+    color: aliceblue;
+    padding-top: 20px;
+    word-spacing: 3px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@keyframes moveright {
+    from{
+        transform: translateX(200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+@keyframes movebottom {
+    from{
+        transform: translateY(200px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+    
+}
+@media screen and (min-width:350px) and (max-width:700px){
+
+    .navbar a{
+    padding: 0px;
+    margin:5px;
+    color: cyan;
+    font-weight:400;
+    
+    }
+    .header{
+        height: auto;
+        position: sticky;
+        top:0px;
+        z-index: 1;
+    }
+    .navbar{
+        margin-left:12px;
+        margin-top:15px;
+        
+    } 
+    .picture img{
+        margin-left:0px ;
+        height: 150px;
+        width: 270px;
+        margin-left: 40px;
+        margin-top: 20px;
+
+    }
+    .content h1{
+        margin-left:30px;
+        font-size: 25px;
+
+    }
+    .content p{
+        margin-left:30px;
+        font-size: 18px;
+        margin-top: 20px;
+
+        
+    }
+
+}
+
+
+
+
+

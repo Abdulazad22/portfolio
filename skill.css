@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: black;
+
+}
+.header {
+    height: 40px;
+    padding-top: 15px;
+    text-align: end;
+    background-color:grey;
+    z-index:1 ;
+}
+.header{
+    position: sticky;
+    top:0px;
+}
+.navbar a{
+    padding-left: 25px;
+    padding-right:20px ;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight:600 ;
+    background-color:cyan;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.navbar a:hover{
+    cursor: pointer;
+    background-color:gold ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.navbar {
+    animation-name: navright;
+    animation-duration: 2s;
+
+
+}
+.skill{
+    z-index: -1;
+}
+.skillcontent{
+    color: aliceblue;
+    font-size: 23px;
+    font-weight: 600;
+    padding-left: 600px;
+    padding-top: 30px;
+    background-color: cyan;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: skillcontent;
+    animation-duration: 2s;
+}
+.skillflex{
+    animation-name: skillflex;
+    animation-duration: 2s;
+}
+.skilllogo h1{
+    color: aliceblue;
+    padding-top: 30px;
+    padding-left: 200px;
+    background-color: lightgreen;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+}
+
+.image {
+    padding-top: 40px;
+    padding-left: 320px;
+    display: flex;
+
+    
+}
+.image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid;
+}
+.image p{
+    color: aliceblue;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.htmlimage {
+    padding-top: 20px;
+    padding-left: 320px;
+    display: flex;
+
+    
+}
+.htmlimage img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid;
+
+}
+.htmlimage p{
+    color: aliceblue;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.cssimage{
+    padding-top: 20px;
+    padding-left:320px;
+    display: flex;
+
+
+}
+.cssimage img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid;
+
+}
+.cssimage p{
+    color: aliceblue;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-top: 15px;
+
+}
+.microsoft{
+    padding-top: 20px;
+    padding-left: 320px;
+    display: flex;
+    
+}
+.microsoft img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid;
+
+}
+.microsoft p{
+    color: aliceblue;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.github{
+    padding-top: 20px;
+    padding-left: 320px;
+    display: flex;
+
+}
+.github img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid;
+
+}
+.github p{
+     color: aliceblue;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-top: 15px;
+
+}
+.tinkercad{
+    padding-top: 20px;
+    padding-left: 320px;
+    display: flex;
+
+
+}
+.tinkercad img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid;
+
+}
+.tinkercad p{
+    color: aliceblue;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-top: 15px;
+
+
+}
+.softskill h1{
+    color: aliceblue;
+    padding-top: 30px;
+    padding-left: 200px;
+    background-color: lightgreen;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+}
+.softskillcontent{
+    padding-top: 30px;
+}
+.softskill p{
+    color: aliceblue;
+    padding-left: 320px;
+    font-size: 25px;
+    font-weight: 530;
+    line-height: 40px;
+
+}
+.empty h1{
+    padding-top: 30px;
+}
+@keyframes navright {
+    from{
+        transform: translateX(200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+@keyframes skillcontent {
+    from{
+        transform: translateY(100px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+    
+}
+@keyframes skillflex {
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+@media screen and (min-width:350px) and (max-width:700px){
+    .navbar a{
+        padding: 0px;
+        margin:5px;
+        color: cyan;
+
+        font-weight: 400;
+        
+        }
+        .header{
+            height: auto;
+            position: sticky;
+            top:0px;
+            z-index: 1;
+        }
+        .navbar{
+            margin-left:12px;
+            margin-top:15px;
+            
+        }
+        .skillcontent {
+               padding-left:80px ;
+               font-size: 18px;
+            
+
+            
+        }
+        .skilllogo h1 {
+            padding-left: 20px;
+        }
+        .skillflex{
+            display: contents;
+            animation-name: animate;
+            animation-duration: 1s;
+        
+
+        }
+        .image {
+            padding-left: 50px;
+
+        }
+        .htmlimage{
+            padding-left:50px ;
+        }
+        .cssimage{
+            padding-left:50px ;
+        }
+        .microsoft{
+            padding-left:50px ;
+        }
+        .github{
+            padding-left:50px ;
+        }
+        .tinkercad{
+            padding-left:50px ;
+        }
+        .softskill h1{
+            padding-left:20px ;
+        }
+        .softskill p{
+            padding-left:80px ;
+        }
+    @keyframes skillcontent {
+        from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+        
+    } 
+
+        
+        
+        
+        
+        
+        
+
+            
+
+}
+
+

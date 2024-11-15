@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: black;
+
+}
+.header {
+    height: 40px;
+    padding-top: 15px;
+    text-align: end;
+    background-color: grey;
+}
+.navbar a{
+    padding-left: 25px;
+    padding-right:20px ;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight:600 ;
+    background-color: cyan;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.navbar a:hover{
+    cursor: pointer;
+    background-color:gold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.navbar {
+    animation-name: navright;
+    animation-duration: 2s;
+
+
+}
+.index{
+    animation-name: index;
+    animation-duration: 2s;
+}
+.contact{
+    color: aliceblue;
+    font-size: 21px;
+    font-weight: 500;
+    padding-left: 500px;
+    padding-top: 50px;
+    background: linear-gradient(red,cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+}
+.contactcontent{
+    padding-top: 30px;
+    padding-left: 150px;
+}
+.contactcontent img{
+    display: flex;
+    margin-top: 10px;
+    height:35px;
+    width: 35px;
+    border-radius: 50%;
+    
+    
+
+
+}
+.contactcontent h1{
+    color: aliceblue;
+    padding-top: 10px;
+    padding-left: 8px;
+    background-color: lightgreen;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+}
+.contactcontent ,img{
+    display: flex;
+}
+.icons a{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    height:35px;
+    width: 35px;
+    background:linear-gradient(red,cyan) ;
+    border-color:lightgreen;
+    border-style: groove;
+    border-radius: 50%; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+      
+}
+.icons{
+    display: flex;
+    padding-left: 180px;
+    padding-top: 20px;
+
+}
+.icons a:hover{
+    cursor: pointer;
+    background: linear-gradient(lightgreen 70%,grey);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.download a{
+    background: linear-gradient(red,cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:none;
+    font-size: 20px;
+    font-weight: 700;
+    border-color: aquamarine;
+    width: 150px;
+    height: 35px;
+    border-radius: 40px;
+    border-style: groove;
+    
+  
+
+}
+.download{
+    padding-top: 30px;
+    padding-left: 230px;
+}
+.home{
+    padding-top: 50px;
+}
+.download:hover{
+    cursor: pointer;
+    color:yellowgreen;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.table{
+    padding-top: 80px;
+    padding-left: 200px;
+}
+.table form{
+    animation-name: index;
+    animation-duration: 2s;
+}
+
+.table tr{
+    line-height: 60px;
+}
+.table td{
+    color: aliceblue;
+    font-size: 22px;
+    font-weight: 600;
+    
+}
+.table input{
+    width: 400px;
+    height: 20px;
+    padding-left: 5px;
+}
+.contactindex{
+    display: flex;
+}
+.submit {
+    padding-left: 200px;
+    padding-top: 30px;
+    
+}
+.submit button{
+    font-size: 15px;
+    font-weight: 500;
+    height: 25px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: aqua;
+    filter: drop-shadow(0 0 5px cyan)
+}
+.submit button:hover{
+    cursor: pointer;
+    background-color: yellow;
+    filter: drop-shadow(0 0 5px yellow)
+
+}
+
+@keyframes navright {
+    from{
+        transform: translateX(200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+@keyframes index {
+    from{
+        transform: translateX(-200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+@keyframes table {
+    from{
+        transform: translateX(200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+@media screen and (min-width:350px) and (max-width:700px){
+    .navbar a{
+    padding: 0px;
+    margin:5px;
+    color: cyan;
+    font-weight: 400;
+    
+    }
+    .header{
+        height: auto;
+        position: sticky;
+        top:0px;
+        z-index: 1;
+    }
+    .navbar{
+        margin-left:2px;
+        margin-top:15px;
+        margin-right: 20px;
+        
+    }
+    .contact{
+        padding-left:50px ;
+
+
+    }
+    .contactcontent {
+        padding: 0px;
+        margin-left:25px;
+        
+
+    }
+    .contactcontent h1{
+        font-size: 21px;
+        padding-top: 20px;
+    }
+    .icons{
+        padding: 0px;
+        padding-top: 20px;
+        margin-left: 50px;
+    }
+
+    .download{
+        padding: 0px;
+        margin-left:100px ;
+        padding-top: 50px;
+
+    }
+    .contactindex{
+        flex-wrap: wrap;
+    }
+    .table{
+        padding-left: 20px;
+    }
+    .table input{
+        width: 200px;
+        
+    }
+    .submit{
+        padding-left: 100px;
+
+    }
+    
+
+}
+
+
+
+    
+
+
+

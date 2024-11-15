@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: black;
+
+}
+.header {
+    height: 40px;
+    padding-top: 15px;
+    text-align: end;
+    background-color:grey;
+    z-index: 1;
+    
+}
+.header{
+    position: sticky;
+    top:0px;
+}
+
+
+
+.navbar a{
+    padding-left: 25px;
+    padding-right:20px ;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight:600 ;
+    color:cyan;
+    
+}
+
+.navbar a:hover{
+    cursor: pointer;
+    background-color: gold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.navbar {
+    animation-name: navbar ;
+    animation-duration: 2s;
+
+
+}
+
+.projectcontent h1{
+    color: aliceblue;
+    font-size: 34px;
+    font-weight: 700;
+    padding-left: 600px;
+    padding-top: 20px;
+    background-color: cyan;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -1;
+
+}
+.project h2{
+    color: aliceblue;
+    font-size: 28px;
+    font-weight: 700;
+    padding-left: 400px;
+    padding-top: 0px;
+    background-color:lightgreen;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.project h1,h2{
+    animation-name: projectcontent;
+    animation-duration: 2s;
+
+}
+.picture{
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+.picture img{
+    margin-top: 60px;
+    width: 530px;
+    height: 380px;
+    border-radius: 40px;
+
+}
+.picture p{
+    color: aliceblue;
+    width: 600px;
+    font-size: 22px;
+    font-weight: 650;
+    padding-left: 50px;
+    padding-top:120px;
+    letter-spacing: 0px;
+    line-height: 30px;
+
+}
+.picture{
+    animation-name: movebottom;
+    animation-timeline: view();
+}
+
+
+.internhtml h1{
+    color: aliceblue;
+    font-size: 34px;
+    font-weight: 700;
+    padding-left: 600px;
+    padding-top: 50px;
+    background: linear-gradient(red,cyan 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+.internhtml h2{
+    color: aliceblue;
+    font-size: 34px;
+    font-weight: 700;
+    padding-left: 400px;
+    padding-top: 10px;
+    background: linear-gradient(red,cyan 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+.esoft img{
+    height:250px;
+    width: 500px;
+    padding-left: 500px;
+
+}
+.internimage img{
+    padding-top: 100px;
+    padding-left: 100px ;
+    height: 250px;
+
+    
+}
+.internhtml h3{
+    background-color: lightgreen;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 650;
+    padding-left: 800px;
+    padding-top: 30px;
+
+}
+.internhtml {
+    animation-name: internhtml;
+    animation-duration: 2s;
+    animation-timeline: view();
+
+}
+.internimage{
+    display: flex;
+
+
+}
+.internimage p{
+    animation-name: moverightp;
+    animation-duration: 2s;
+}
+.internimage p{
+    color: aliceblue;
+    padding-left: 100px;
+    padding-top: 70px;
+    line-height: 30px;
+    font-size: 20px;
+    
+    
+    
+}
+.interncss{
+    display: flex;
+}
+.interncss{
+    animation-name: movecssimg;
+    animation-timeline: view() ;
+}
+.interncss img{
+    height:270px;
+    width:450px;
+    padding-left: 100px;
+    padding-top: 180px;
+    
+}
+.interncss p{
+    color: aliceblue;
+    padding-left: 100px;
+    padding-top: 70px;
+    line-height: 30px;
+    font-size: 20px;
+    padding-top: 170px;
+    
+}
+.empty{
+    padding-top: 100px;
+}
+@keyframes navbar {
+   from{
+    transform: translateX(200px);
+   }
+   to{
+    transform: translateX(0px);
+   }
+    
+}
+@keyframes movebottom {
+    from{
+        scale:.8;opacity: 0;
+    }
+    to{
+        scale:1,opacity:1
+    }
+    
+}
+
+
+@keyframes internhhtml {
+    from{
+        transform: translateX(-200px);
+        scale: (0);
+         
+    }
+    to{
+        transform: translateX(0px);
+        scale(1);
+    }
+}
+    
+
+@keyframes movecssimg {
+    from{
+        scale:.8;opacity: 0; 
+    }
+    to{
+        scale:1,opacity:1
+    }
+    
+}
+@keyframes projectcontent {
+    from{
+        transform: translateX(-200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+@media screen and (min-width:350px) and (max-width:700px){
+        .navbar a{
+        padding: 0px;
+        margin:5px;
+        color: cyan;
+        font-weight: 400;
+        
+        }
+        .header{
+            height: auto;
+            position: sticky;
+            top:0px;
+            z-index: 1;
+        }
+        .navbar{
+            margin-left:2px;
+            margin-top:15px;
+            margin-right: 20px;
+            
+        }
+        .projectcontent h1{
+            padding-left: 110px;
+            font-size: 26px;
+            
+        }
+        .project h2{
+            margin-left: 12px;
+            font-size: 18px;
+            padding: 2px;
+    
+
+        }
+        .picture img{
+            width:270px;
+            height: 200px;
+            margin-left: 35px;
+            border-radius: 20px;
+              
+        }
+        .picture p{
+            width: 270px;
+            font-size: 18px;
+            font-weight: 500;
+            padding-top: 50px;
+            padding-left: 35px;
+
+        }
+        .picture {
+            display:contents;
+
+        }
+        .internhtml h1{
+            padding-left: 100px;
+            font-size: 25px;
+            font-weight: 600;
+
+        }
+        .internhtml h2{
+            font-size: 18px;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        .internhtml h3{
+            letter-spacing: normal;
+            padding-left: 20px;
+            font-size: 20px;
+            font-weight: 600;
+            padding-top: 10px;
+
+
+        }
+        .esoft img{
+            width:300px;
+            height: 200px;
+            padding-left: 20px;
+            padding-top: 20px;
+        
+        }
+        .internimage img{
+            padding-left: 20px;
+            width: 300px;
+            height: 200px;
+            padding-top: 50px;
+
+        }
+        .internimage {
+            display: contents;
+
+        }
+        .internimage p{
+            padding-left: 20px;
+            width: 270px;
+            font-size: 18px;
+            font-weight: 500;
+            padding-top: 30px;
+        }
+        .interncss{
+            display: contents;
+        }
+        .interncss img{
+            padding-left: 20px;
+            width: 300px;
+            height: 200px;
+            padding-top: 70px;
+
+
+        }
+        .interncss p{
+            padding-left: 20px;
+            width: 270px;
+            font-size: 18px;
+            font-weight: 500;
+            padding-top: 20px;
+
+        }
+
+
+
+    }
